@@ -9,8 +9,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-let argument = a + b 
-let answer = [`${argument}`, `The sum of ${a} and ${b} is ${argument}`];
+let argument = a + b;
+// console.log(argument);
+let answer = [argument, `The sum of ${a} and ${b} is ${argument}`];
 return answer;
 } 
 
@@ -29,8 +30,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-let product = 5 * 9;
-let productArray = [`${product}`,` The product of ${a} * ${b} is ${product}` ]
+let product = a * b;
+// console.log(product);
+let productArray = [product,` The product of ${a} * ${b} is ${product}` ]
 return productArray;
 }
 
@@ -52,8 +54,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+ let solvS = sum(a, b)[0];
+ let solvSum = sum(solvS, c)[0];
+ let solvM = multiply(a, b)[0];
+ let solvMul = multiply(solvM, c)[0];
+ let Sarray = [solvSum, solvMul, `${a} and ${b} and ${c} sum to ${solvSum}.`, `The product of ${a} and ${b} and ${c} is ${solvMul}.`];
+ console.log(Sarray);
+ return Sarray;
 }
+
+sumAndMultiply(4, 7, 5)
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
