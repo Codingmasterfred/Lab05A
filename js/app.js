@@ -87,6 +87,7 @@ function sumArray(sumArr) { //eslint-disable-line
     let a = sumArr[0];
     let b = sumArr[1];
     let c = sumArr[2];
+
     let AB = sum(a,b)[0];
     let Comb = sum(AB,c)[0];
     let  sumArray = [Comb, a +',' + b + "," + c + " was passed in as an array of numbers, and " + Comb + " is their sum."]
@@ -96,6 +97,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 } console.log(sumArray(testArray))
 // sumArray(testArray);
+
 // let sum = 0;
     // for(let i = 0; i < sumArr.length; i++){
     //     sum( sumArr[i]);
