@@ -84,13 +84,33 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    let [1,2,3,4,5,6,7,8,9]
-return[0]
-}sumArray()
+    let a = sumArr[0];
+    let b = sumArr[1];
+    let c = sumArr[2];
+    let Comb = (a + b + c ) 
+    let  sumArray = [Comb, a +"," + b + "," + c + " was passed in as an array of numbers, and " + Comb + " is their sum."]
+    console.log(sumArray)
 
+} //sumArray(testArray);
+// let sum = 0;
+    // for(let i = 0; i < sumArr.length; i++){
+    //     sum( sumArr[i]);
+    // }
+    // console.log(sum)
+    // let Em = "";
+    // for(let j = 0; j < sumArr.length; j++){
+    //     Em += sumArr[j] + ",";
+    // }
+    // Em = Em.slice(0, -1);
+    // let string = Em + " was passed in as an array of numbers, and " + sum 
+    
+    //     return sum
+
+
+ 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -140,4 +160,4 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas
